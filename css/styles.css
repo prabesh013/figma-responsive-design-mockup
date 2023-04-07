@@ -1,0 +1,256 @@
+/* Base styles (extra small devices - mobile) */
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  display: inline-block;
+  line-height: 21.78px;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+}
+#hero-section {
+  background-color: rgba(33, 33, 33, 0.3);
+  background-image: url("../images/background-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 32px 32px 310px;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar-brand {
+  font-family: "Inter", sans-serif;
+  font-size: 30.4px;
+  font-weight: 900;
+  line-height: 36.79px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#burger {
+  cursor: pointer;
+}
+#burger span {
+  padding: 2px 14px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 4px 0px;
+  display: block;
+}
+
+#navlinks {
+  display: none;
+}
+
+#hero-info-wrapper {
+  max-width: 314px;
+  margin-top: 216px;
+}
+#hero-info-wrapper a:first-of-type {
+  margin-top: 32px;
+}
+
+hr {
+  width: 90px;
+  height: 15px;
+  background: #ffffff;
+  margin-top: 0px;
+}
+h1 {
+  font-family: "Libre Caslon Display", serif;
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 62px;
+}
+#about-artjunks {
+  margin-top: 32px;
+}
+
+.special-btn {
+  padding: 9px 28px 11px 27px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+.special-btn:hover,
+.special-btn:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+.new-reads-section {
+  padding: 78px 32px 43px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #000;
+  max-width: 311px;
+  margin: 0 auto;
+}
+
+.blog-cards-wrapper {
+  max-width: 311px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  margin-top: 78px;
+}
+
+.blog-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.blog-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px grey;
+}
+
+.blog-card-image {
+  height: 352px;
+}
+.blog-card-image > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 4px 4px 0px 0px;
+}
+.blog-card-body {
+  padding: 35px 32px 32px;
+}
+.blog-card-date {
+  color: #b7b7b7;
+  font-size: 13px;
+  line-height: 16px;
+}
+.blog-card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 28px;
+}
+.blog-card-readmore {
+  text-align: right;
+  font-size: 15px;
+  line-height: 18px;
+  color: #d9852c;
+  margin-top: 18px;
+}
+.blog-card-readmore:hover,
+.blog-card-readmore:focus {
+  color: red;
+}
+
+/* Small devices (tablets) */
+@media screen and (min-width: 576px) {
+  #hero-section {
+    padding-bottom: 352px;
+  }
+  #hero-info-wrapper {
+    max-width: 600px;
+    margin-left: 40px;
+  }
+  h1 {
+    font-size: 70px;
+    line-height: 87px;
+  }
+  #about-artjunks {
+    max-width: 528px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 600px;
+  }
+  .blog-cards-wrapper {
+    max-width: 600px;
+
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 56px;
+  }
+  .blog-card-title {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .blog-card-readmore {
+    margin-top: 28px;
+  }
+  .blog-card {
+    width: calc((100%-40px-6px) / 3);
+  }
+}
+
+/* Medium devices (tablets/laptops) */
+@media screen and (min-width: 768px) {
+  #hero-section {
+    padding-bottom: 328px;
+  }
+  #hero-info-wrapper {
+    max-width: 748px;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 99px;
+  }
+
+  .blog-cards-wrapper {
+    max-width: 1296px;
+    margin-top: 54px;
+  }
+  h2 {
+    max-width: 1296px;
+  }
+  .card-two img {
+    object-position: top center;
+  }
+  .card-three img {
+    object-position: bottom center;
+  }
+  .blog-card-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .blog-card-readmore {
+    margin-top: 34px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #hero-section {
+    background-position: center center;
+  }
+  /* CSS rules */
+  #navlinks {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+  }
+  #burger {
+    display: none;
+  }
+}
